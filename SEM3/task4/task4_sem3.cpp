@@ -35,12 +35,12 @@ int main() {
     cout << left << fixed << setprecision(2);
 
     for (size_t i = 0; i < times.size(); ++i) {
-        std::cout << std::left << std::setw(10) << times[i]
-            << std::setw(15) << velocities[i] << std::endl;
+        cout << left << setw(10) << times[i]
+            << setw(15) << velocities[i] << endl;
     }
 
     if (velocities.empty()) {
-        std::cout << "Ошибка: вектор скоростей пуст!" << std::endl;
+        cout << "Ошибка: вектор скоростей пуст!" << endl;
         return 1;
     }
 
