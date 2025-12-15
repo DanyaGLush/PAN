@@ -36,10 +36,10 @@ public:
 
     void printStatus() {
         if (isActive) {
-            std::cout << "Датчик активен | ";
+            cout << "Датчик активен | ";
         }
         else {
-            std::cout << "Датчик выключен | ";
+            cout << "Датчик выключен | ";
         }
         cout << "Сила сигнала: " << signalStrength << " дБ" << endl;
     }
